@@ -9,10 +9,14 @@ print("Welcome!")
 admin_or_user = int(input("Are you an Administrator or User?\n1 - Admin\n2 - User\n(1/2): "))
 
 if admin_or_user == 1:
-    admin()
+    admin() #This includes admin authentication, updation of data and viewing of graphs
+
 elif admin_or_user == 2:
     choice = input("Would you like to view the graph? (y/n): ").lower()
     
     if choice == "y":
-        line_graph(cases_category())
+        line_graph(cases_category()) #This includes choosing of categories and viewing the graphs
+    
+    else:
+        print("Exiting the program")
     
