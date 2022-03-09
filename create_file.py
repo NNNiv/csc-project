@@ -21,6 +21,8 @@ months = [
 
 
 def update_data(new_file):
+    """Updates the data as per the template csv file"""
+
     with open('template.csv', 'r') as template:
         reader = csv.reader(template)
         writer = csv.writer(new_file)
@@ -39,6 +41,10 @@ def update_data(new_file):
     print("Data updated successfully")
 
 def create_file():
+    """Creates the new file for the next day
+       along with a new folder for the next month
+       if the current month is over"""
+
     folders = []
     for folder in sorted(os.listdir(path)):
         days = sorted(os.listdir(path+folder))
