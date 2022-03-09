@@ -6,6 +6,7 @@ def line_graph(functions):
     plt.figure(figsize=(20, 11))
     data = []
     title = ""
+    
     for function in functions:
         value = function()
         data.append(value)
