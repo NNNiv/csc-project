@@ -5,5 +5,5 @@
 ## Prerequisite Libraries
 ### Matplotlib
 
-### Note: Date for Aug, Sept, Oct and Nov will be added shortly 
+### Note: Data for Aug, Sept, Oct and Nov will be added shortly 
 
